@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects - Anshika Rai</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">ANSHIKA<span>.DEV</span></a>
+  <nav>
+      <a href="index.html" data-p="index">Home</a>
+      <a href="about.html" data-p="about">About</a>
+      <a href="projects.html" data-p="projects">Projects</a>
+      <a href="skills.html" data-p="skills">Skills</a>
+      <a href="contact.html" data-p="contact">Contact</a>
+  </nav>
+  <button class="burger" aria-label="Menu">☰</button>
+</header>
+<div class="mobile-nav">
+      <a href="index.html" data-p="index">Home</a>
+      <a href="about.html" data-p="about">About</a>
+      <a href="projects.html" data-p="projects">Projects</a>
+      <a href="skills.html" data-p="skills">Skills</a>
+      <a href="contact.html" data-p="contact">Contact</a>
+</div>
+<script>document.querySelectorAll('[data-p="projects"]').forEach(a=>a.classList.add('active'))</script>
+<section class="strip off">
+  <h1>Projects</h1>
+  <p>Four things I've built end-to-end - all live, all mine.</p>
+</section>
+<section class="wrap">
+  <div class="proj-list">
+    <div class="tile proj-card reveal">
+      <div class="pnum">01</div>
+      <div>
+        <h3>UniIssueHub</h3>
+        <div class="stack">REACT &middot; NODE.JS &middot; MONGODB &middot; EXPRESS &middot; NODEMAILER</div>
+        <ul>
+          <li>Full-stack complaint tracking system for students to raise, track and resolve campus issues in real time.</li>
+          <li>Priority-based categorization, image uploads, and automated email notifications for status updates.</li>
+          <li>Admin dashboard with role-based access control and an approval workflow over REST APIs.</li>
+        </ul>
+        <a class="btn" href="https://complaint-system-wine.vercel.app" target="_blank" rel="noopener">View Live ↗</a>
+        <div class="tags"><span class="tag">MERN</span><span class="tag">RBAC</span><span class="tag">Email Alerts</span><span class="tag">Elite Hack Finalist</span></div>
+      </div>
+    </div>
+    <div class="tile teal proj-card reveal">
+      <div class="pnum">02</div>
+      <div>
+        <h3>Traveloop</h3>
+        <div class="stack">REACT &middot; FASTAPI &middot; PYTHON &middot; SQLALCHEMY &middot; SQLITE</div>
+        <ul>
+          <li>Multi-city travel planning platform with a drag-and-drop itinerary builder, calendar view and live weather per stop.</li>
+          <li>Budget tracking with visual cost breakdowns (Recharts), one-click PDF invoice export and curated destination discovery.</li>
+          <li>Community feed with photo uploads, JWT auth and secure public itinerary sharing with one-click trip cloning.</li>
+        </ul>
+        <a class="btn" href="https://odoo-virtual-round-2026.vercel.app" target="_blank" rel="noopener">View Live ↗</a>
+        <div class="tags"><span class="tag">Travel</span><span class="tag">Drag &amp; Drop</span><span class="tag">PDF Export</span><span class="tag">JWT</span></div>
+      </div>
+    </div>
+    <div class="tile proj-card reveal">
+      <div class="pnum">03</div>
+      <div>
+        <h3>AI Tutor</h3>
+        <div class="stack">PYTHON &middot; LLM &middot; STREAMLIT &middot; HUGGINGFACE</div>
+        <ul>
+          <li>AI-powered tutor that personalizes learning based on user queries and skill level.</li>
+          <li>Uses large language models to generate context-aware explanations, code examples and practice problems.</li>
+          <li>Deployed on HuggingFace Spaces with a clean Streamlit interface.</li>
+        </ul>
+        <a class="btn" href="https://anshika1179-scaledown-gencoder.hf.space" target="_blank" rel="noopener">View Live ↗</a>
+        <div class="tags"><span class="tag">GenAI</span><span class="tag">LLM</span><span class="tag">EdTech</span></div>
+      </div>
+    </div>
+    <div class="tile teal proj-card reveal">
+      <div class="pnum">04</div>
+      <div>
+        <h3>DeltaGeo</h3>
+        <div class="stack">PYTHON &middot; FASTAPI &middot; SIAMESE U-NET &middot; EDSR &middot; REMOTE SENSING</div>
+        <ul>
+          <li>ML/DL platform that detects geographical changes using satellite images from different years.</li>
+          <li>Siamese U-Net for change detection and EDSR for image super-resolution.</li>
+          <li>FastAPI backend with an interactive dashboard to process images and visualize detected changes.</li>
+        </ul>
+        <a class="btn" href="https://vertex-dynasty-deltageo.onrender.com/dashboard" target="_blank" rel="noopener">View Live ↗</a>
+        <div class="tags"><span class="tag">Deep Learning</span><span class="tag">Satellite Imagery</span><span class="tag">Computer Vision</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>&copy; 2026 <b>Anshika Rai</b> &middot; designed &amp; built from scratch with teal &amp; off-white</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
