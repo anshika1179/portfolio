@@ -65,7 +65,7 @@ a{color:inherit}
 @keyframes blink{50%{opacity:0}}
 .t-name p{color:var(--teal-mist);font-size:15px;max-width:480px;line-height:1.6;margin-top:10px}
 .t-photo{display:flex;align-items:center;justify-content:center;animation-delay:.12s}
-.avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;object-position:center 20%;background:linear-gradient(135deg,var(--teal),#0d9488);border:3px solid var(--ink);animation:bob 4s ease-in-out infinite}
+.avatar{width:170px;height:170px;border-radius:50%;object-fit:cover;object-position:center 20%;background:linear-gradient(135deg,var(--teal),#0d9488);border:3px solid var(--ink);animation:bob 4s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 .t-cgpa{animation-delay:.18s}
 .t-cgpa .big{font-size:56px;font-weight:900;color:var(--teal-deep);line-height:1}

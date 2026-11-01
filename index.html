@@ -3,53 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anshika Rai - Full-Stack Developer</title>
-<link rel="stylesheet" href="css/style.css">
+<title>Anshika Rai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+  :root{--teal:#0f766e;--teal-deep:#115e59;--offwhite:#faf7f2}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    background:var(--teal);color:var(--offwhite);overflow:hidden;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    font-family:'Great Vibes',cursive;
+  }
+  .blob{position:absolute;border-radius:50%;background:rgba(255,255,255,.07)}
+  .b1{width:280px;height:280px;top:-90px;left:-90px}
+  .b2{width:180px;height:180px;top:20%;right:-60px}
+  .b3{width:220px;height:220px;bottom:-80px;left:15%}
+  .name{
+    font-size:clamp(64px,14vw,150px);line-height:1.1;text-align:center;
+    padding:0 20px;text-shadow:0 4px 0 rgba(0,0,0,.18);
+  }
+  .name span{display:inline-block;opacity:0;transform:translateY(40px) rotate(6deg) scale(.8);animation:rise .7s cubic-bezier(.2,.9,.3,1.2) forwards}
+  .name span.space{width:.35em}
+  @keyframes rise{to{opacity:1;transform:translateY(0) rotate(0) scale(1)}}
+  .rule{
+    width:0;height:3px;background:var(--offwhite);margin-top:26px;border-radius:2px;
+    animation:grow .8s ease .9s forwards;
+  }
+  @keyframes grow{to{width:min(320px,60vw)}}
+  .sub{
+    font-family:system-ui,-apple-system,'Segoe UI',sans-serif;font-size:12px;font-weight:700;
+    letter-spacing:.35em;text-transform:uppercase;margin-top:20px;opacity:0;
+    animation:fade .6s ease 1.4s forwards;color:rgba(250,247,242,.85);
+  }
+  @keyframes fade{to{opacity:1}}
+  .skip{
+    position:absolute;bottom:34px;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;
+    font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--offwhite);text-decoration:none;opacity:0;animation:fade .6s ease 1.6s forwards;
+    border:2px solid rgba(250,247,242,.6);padding:10px 22px;border-radius:999px;
+  }
+  .skip:hover{background:var(--offwhite);color:var(--teal-deep)}
+</style>
 </head>
 <body>
-<header class="topbar">
-  <a class="brand" href="index.html">ANSHIKA<span>.DEV</span></a>
-  <nav>
-      <a href="index.html" data-p="index">Home</a>
-      <a href="about.html" data-p="about">About</a>
-      <a href="projects.html" data-p="projects">Projects</a>
-      <a href="skills.html" data-p="skills">Skills</a>
-      <a href="certifications.html" data-p="certifications">Certifications</a>
-      <a href="contact.html" data-p="contact">Contact</a>
-  </nav>
-  <button class="burger" aria-label="Menu">☰</button>
-</header>
-<div class="mobile-nav">
-      <a href="index.html" data-p="index">Home</a>
-      <a href="about.html" data-p="about">About</a>
-      <a href="projects.html" data-p="projects">Projects</a>
-      <a href="skills.html" data-p="skills">Skills</a>
-      <a href="certifications.html" data-p="certifications">Certifications</a>
-      <a href="contact.html" data-p="contact">Contact</a>
-</div>
-<script>document.querySelectorAll('[data-p="index"]').forEach(a=>a.classList.add('active'))</script>
-<main class="bento">
-  <div class="tile t-name">
-    <div class="hello">HELLO, I'M</div>
-    <h1>Anshika Rai</h1>
-    <div class="typing"><span class="txt"></span><span class="cursor">|</span></div>
-    <p>Full-stack developer on the MERN stack. 3rd-year B.Tech CSE (Oracle IEP) at Parul Institute of Engineering and Technology, Vadodara. I build AI-powered web apps and grind DSA in Java.</p>
-  </div>
-  <div class="tile t-photo"><img class="avatar" src="profile.jpg" alt="Anshika Rai"></div>
-  <div class="tile t-cgpa"><div class="big">8.9</div><div class="lbl">CGPA / B.TECH CSE</div></div>
-  <div class="tile t-edu"><h3>Currently</h3><p>Grinding DSA in Java on LeetCode + GeeksforGeeks, and learning system design - caching, scaling, real-world architecture.</p></div>
-  <div class="tile t-cta"><h3>Let's build something</h3><a href="contact.html">Get in touch &rarr;</a></div>
-</main>
-<div class="marquee-band"><div class="marquee">
-<span>REACT</span><span>NODE.JS</span><span>MONGODB</span><span>JAVA</span><span>DSA</span><span>EXPRESS</span><span>SYSTEM DESIGN</span><span>PYTHON</span><span>FASTAPI</span><span>GENAI</span><span>ORACLE SQL</span><span>LANGCHAIN</span>
-<span>REACT</span><span>NODE.JS</span><span>MONGODB</span><span>JAVA</span><span>DSA</span><span>EXPRESS</span><span>SYSTEM DESIGN</span><span>PYTHON</span><span>FASTAPI</span><span>GENAI</span><span>ORACLE SQL</span><span>LANGCHAIN</span>
-</div></div>
-<section class="explore" data-stagger>
-  <a class="tile x-card" href="about.html"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg></div><h3>About</h3><p>Who I am, my journey and experience.</p><span class="go">EXPLORE &rarr;</span></a>
-  <a class="tile x-card teal" href="projects.html"><div class="ic"><svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div><h3>Projects</h3><p>7 shipped builds - UniIssueHub, Traveloop, GatherPoint &amp; more.</p><span class="go">EXPLORE &rarr;</span></a>
-  <a class="tile x-card" href="skills.html"><div class="ic"><svg viewBox="0 0 24 24"><polygon points="13 2 4 14 11 14 10 22 20 9 13 9 13 2"/></svg></div><h3>Skills</h3><p>Languages, frameworks, AI/ML and more.</p><span class="go">EXPLORE &rarr;</span></a>
-  <a class="tile x-card teal" href="contact.html"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg></div><h3>Contact</h3><p>Email, LinkedIn, GitHub, LeetCode.</p><span class="go">EXPLORE &rarr;</span></a>
-</section>
-<script src="js/main.js"></script>
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <h1 class="name" id="name" aria-label="Anshika Rai"></h1>
+  <div class="rule"></div>
+  <div class="sub">Portfolio</div>
+  <a class="skip" href="home.html">Enter →</a>
+<script>
+  const text = 'Anshika Rai';
+  const el = document.getElementById('name');
+  [...text].forEach((ch, i) => {
+    const s = document.createElement('span');
+    if (ch === ' ') { s.className = 'space'; s.innerHTML = '&nbsp;'; }
+    else { s.textContent = ch; s.style.animationDelay = (0.12 + i * 0.07) + 's'; }
+    el.appendChild(s);
+  });
+  const GO = 'home.html';
+  // Returning visitors in this tab session skip the splash.
+  if (sessionStorage.getItem('splashed')) { location.replace(GO); }
+  else {
+    sessionStorage.setItem('splashed', '1');
+    setTimeout(() => location.replace(GO), 3000);
+  }
+</script>
 </body>
 </html>
